@@ -1,0 +1,17 @@
+# 忽略敏感文件
+.env
+*.env
+.env.local
+
+# Python 无关文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
