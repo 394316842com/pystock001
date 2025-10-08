@@ -1,7 +1,1 @@
-python-dotenv>=1.0.0
-mysql-connector-python>=8.0.0
-akshare>=1.0.0
-pandas>=2.0.0
-backtrader>=1.9.78
-numpy>=1.23.0
-scikit-learn>=1.2.2,<1.4.0
+﻿python-dotenv>=1.0.0mysql-connector-python>=8.0.0akshare>=1.0.0pandas>=2.0.0backtrader>=1.9.78numpy>=1.23.0scikit-learn>=1.2.2,<1.4.0

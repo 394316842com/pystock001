@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "your-project-name"  # 替换为您的项目名称
+version = "0.1.0"           # 替换为您的项目版本
+description = ""            # 替换为您的项目描述
+authors = ["Your Name <you@example.com>"]  # 替换为您的名字和邮箱
+
+[tool.poetry.dependencies]
+python = "^3.12"  # 指定Python版本要求，您可以根据需要调整
+python-dotenv = ">=1.0.0"
+mysql-connector-python = ">=8.0.0"
+akshare = ">=1.0.0"
+pandas = ">=2.0.0"
+backtrader = ">=1.9.78"
+numpy = ">=1.23.0"
+scikit-learn = ">=1.2.2,<1.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

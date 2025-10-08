@@ -1,0 +1,35 @@
+2025-10-08 21:09:10,543 - INFO - 开始初始化数据库...
+2025-10-08 21:09:10,543 - INFO - 正在连接到MySQL服务器: localhost
+2025-10-08 21:09:10,641 - INFO - 正在创建数据库: pystock
+2025-10-08 21:09:10,641 - INFO - 数据库 pystock 创建成功
+2025-10-08 21:09:10,641 - INFO - 正在读取schema文件: I:\code2025\pystock001\db\schema.sql
+2025-10-08 21:09:10,646 - INFO - 正在执行SQL语句创建表...
+2025-10-08 21:09:10,654 - ERROR - 执行SQL语句出错: 1044 (42000): Access denied for user 'pystock'@'localhost' to database 'stock_analysis'
+2025-10-08 21:09:10,654 - ERROR - 出错的SQL: CREATE DATABASE IF NOT EXISTS stock_analysis 
+DEFAULT CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci
+2025-10-08 21:09:10,655 - ERROR - 执行SQL语句出错: 1044 (42000): Access denied for user 'pystock'@'localhost' to database 'stock_analysis'
+2025-10-08 21:09:10,655 - ERROR - 出错的SQL: USE stock_analysis
+2025-10-08 21:09:10,657 - INFO - 表已存在，跳过: -- 股票基本信息表 (修正：移除冗余字段)
+CREATE TABLE stock_basic (
+...
+2025-10-08 21:09:10,675 - INFO - 执行成功: -- 交易数据表 (修正：移除 pre_close_price)
+CREATE TABLE stoc...
+2025-10-08 21:09:10,676 - INFO - 表已存在，跳过: -- 财报数据表 (优化：添加索引)
+CREATE TABLE financial_statemen...
+2025-10-08 21:09:10,678 - INFO - 表已存在，跳过: -- 主营业务数据表 (优化：添加索引)
+CREATE TABLE business_main (
+...
+2025-10-08 21:09:10,680 - INFO - 表已存在，跳过: -- 公告数据表 (优化：调整字段长度)
+CREATE TABLE announcement (
+ ...
+2025-10-08 21:09:10,683 - INFO - 表已存在，跳过: -- 股东数据表 (优化：添加索引)
+CREATE TABLE shareholder (
+    ...
+2025-10-08 21:09:10,685 - INFO - 表已存在，跳过: -- 技术指标表 (优化：添加索引)
+CREATE TABLE technical_indicato...
+2025-10-08 21:09:10,687 - INFO - 表已存在，跳过: -- 回测结果表 (优化：添加索引)
+CREATE TABLE backtest_results (...
+2025-10-08 21:09:10,687 - INFO - 所有表创建成功
+2025-10-08 21:09:10,688 - INFO - 数据库连接已关闭
+2025-10-08 21:09:10,688 - INFO - 数据库初始化完成

@@ -23,7 +23,7 @@ CREATE TABLE stock_daily (
     high_price DECIMAL(10,2) NOT NULL,
     low_price DECIMAL(10,2) NOT NULL,
     close_price DECIMAL(10,2) NOT NULL,
-    change DECIMAL(10,2),          -- 涨跌额
+    `change` DECIMAL(10,2),          -- 涨跌额
     change_ratio DECIMAL(10,4),   -- 涨跌幅 (0.0123 = 1.23%)
     volume BIGINT,                -- 成交量 (手)
     amount DECIMAL(15,2),         -- 成交额 (元)
